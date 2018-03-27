@@ -1,7 +1,9 @@
 Feature: Android test
 	As a developer
 	I want to run webdriver tests
-	on Android
+	using Appium
 
-	Scenario: Basic test
-		Given I am on the Google page
+	Scenario: Login to test page
+		Given I am on the test page
+		When I enter my username "admin" and password "admin"
+		Then I should login successfully
