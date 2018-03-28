@@ -2,7 +2,7 @@
 
 var {defineSupportCode} = require('cucumber');
 var {Builder, By, until} = require('selenium-webdriver');
-var platform = process.env.PLATFORM || "ANDROID"
+var platform = process.env.PLATFORM || "CHROME"
 
 var buildAndroidDriver = function() {
 	return new Builder().
